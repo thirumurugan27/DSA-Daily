@@ -1,12 +1,4 @@
-# 486. Predict the Winner
-
-🟡 **Medium** &nbsp;|&nbsp; [View on LeetCode](https://leetcode.com/problems/predict-the-winner/)
-
-**Topics:** Array, Math, Dynamic Programming, Recursion, Game Theory
-
----
-
-<p>You are given an integer array <code>nums</code>. Two players are playing a game with this array: player 1 and player 2.</p>
+<h2><a href="https://leetcode.com/problems/predict-the-winner">Predict the Winner</a></h2> <img src='https://img.shields.io/badge/Difficulty-Medium-orange' alt='Difficulty: Medium' /><hr><p>You are given an integer array <code>nums</code>. Two players are playing a game with this array: player 1 and player 2.</p>
 
 <p>Player 1 and player 2 take turns, with player 1 starting first. Both players start the game with a score of <code>0</code>. At each turn, the player takes one of the numbers from either end of the array (i.e., <code>nums[0]</code> or <code>nums[nums.length - 1]</code>) which reduces the size of the array by <code>1</code>. The player adds the chosen number to their score. The game ends when there are no more elements in the array.</p>
 
@@ -40,8 +32,3 @@ Finally, player 1 has more score (234) than player 2 (12), so you need to return
 	<li><code>1 &lt;= nums.length &lt;= 20</code></li>
 	<li><code>0 &lt;= nums[i] &lt;= 10<sup>7</sup></code></li>
 </ul>
-
-
----
-
-**My Solution:** [486-Predict-the-Winner.java](./486-Predict-the-Winner.java)
