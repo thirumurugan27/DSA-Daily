@@ -1,10 +1,11 @@
 class Solution {
-    public boolean checkDivisibility(int n) {
+    public static boolean checkDivisibility(int n) {
         int sum=0,mul=1;
         int temp=n;
         while(temp!=0){
-            sum+=temp%10;
-            mul*=(temp%10);
+            int l=temp%10;
+            sum+=l;
+            mul*=l;
             temp/=10;
         }
         return n%(sum+mul)==0;
