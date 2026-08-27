@@ -1,15 +1,17 @@
 class Solution {
     public int[] rearrangeArray(int[] nums) {
-        Queue<Integer> pos=new LinkedList<>();
-        Queue<Integer> neg=new LinkedList<>();
+        int n=nums.length;
+        int[] ans=new int[n];
+        int negi=1,posi=0;
         for(int i:nums){
-            if(i<0) neg.offer(i);
-            else pos.offer(i);
+            if(i<0){
+                ans[negi]=i;
+                negi+=2;
+            }else{
+                ans[posi]=i;
+                posi+=2;
+            }
         }
-        for(int i=0;i<nums.length;i++){
-            nums[i++]=pos.poll();
-            nums[i]=neg.poll();
-        }
-        return nums;
+        return ans;
     }
 }
