@@ -10,6 +10,9 @@
  */
 class Solution {
     public ListNode modifiedList(int[] nums, ListNode head) {
+        if(nums.length==0 || head==null){
+            return head;
+        }
         HashSet<Integer> set=new HashSet<>();
         for(int i:nums){
             set.add(i);
