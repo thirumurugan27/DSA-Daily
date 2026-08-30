@@ -51,8 +51,6 @@ class LFUCache {
             set.add(key);
             return;
         }
-        if (n == 0)
-            return;
         if (map.size() == n) {
             int lk = set.first();
             set.remove(lk);
