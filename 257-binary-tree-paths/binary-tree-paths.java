@@ -14,12 +14,12 @@
  * }
  */
 class Solution {
-    public List<String> binaryTreePaths(TreeNode root) {
+    public static List<String> binaryTreePaths(TreeNode root) {
         List<String> result = new ArrayList<>();
         dfs(root, "", result);
         return result;
     }
-    public void dfs(TreeNode node, String path, List<String> result) {
+    public static void dfs(TreeNode node, String path, List<String> result) {
         if (node == null) return;
         path += node.val;
         if (node.left == null && node.right == null) {
